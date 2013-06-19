@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68CBEEF51771590F0089A3CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF41771590F0089A3CE /* UIKit.framework */; };
+		68CBEEF71771590F0089A3CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF61771590F0089A3CE /* Foundation.framework */; };
+		68CBEEF91771590F0089A3CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF81771590F0089A3CE /* CoreGraphics.framework */; };
+		68CBEEFF1771590F0089A3CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEEFD1771590F0089A3CE /* InfoPlist.strings */; };
+		68CBEF011771590F0089A3CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF001771590F0089A3CE /* main.m */; };
+		68CBEF051771590F0089A3CE /* SoapBubbleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF041771590F0089A3CE /* SoapBubbleAppDelegate.m */; };
+		68CBEF071771590F0089A3CE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF061771590F0089A3CE /* Default.png */; };
+		68CBEF091771590F0089A3CE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF081771590F0089A3CE /* Default@2x.png */; };
+		68CBEF0B1771590F0089A3CE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF0A1771590F0089A3CE /* Default-568h@2x.png */; };
+		68CBEF0E1771590F0089A3CE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF0C1771590F0089A3CE /* MainStoryboard_iPhone.storyboard */; };
+		68CBEF11177159100089A3CE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF0F1771590F0089A3CE /* MainStoryboard_iPad.storyboard */; };
+		68CBEF14177159100089A3CE /* SoapBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF13177159100089A3CE /* SoapBubbleViewController.m */; };
+		68CBEF1C177159100089A3CE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEF1B177159100089A3CE /* SenTestingKit.framework */; };
+		68CBEF1D177159100089A3CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF41771590F0089A3CE /* UIKit.framework */; };
+		68CBEF1E177159100089A3CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF61771590F0089A3CE /* Foundation.framework */; };
+		68CBEF26177159100089A3CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF24177159100089A3CE /* InfoPlist.strings */; };
+		68CBEF29177159100089A3CE /* SoapBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF28177159100089A3CE /* SoapBubbleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CBEF1F177159100089A3CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68CBEEE91771590F0089A3CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68CBEEF01771590F0089A3CE;
+			remoteInfo = SoapBubble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68CBEEF11771590F0089A3CE /* SoapBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoapBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CBEEF41771590F0089A3CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		68CBEEF61771590F0089A3CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		68CBEEF81771590F0089A3CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		68CBEEFC1771590F0089A3CE /* SoapBubble-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoapBubble-Info.plist"; sourceTree = "<group>"; };
+		68CBEEFE1771590F0089A3CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68CBEF001771590F0089A3CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68CBEF021771590F0089A3CE /* SoapBubble-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoapBubble-Prefix.pch"; sourceTree = "<group>"; };
+		68CBEF031771590F0089A3CE /* SoapBubbleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapBubbleAppDelegate.h; sourceTree = "<group>"; };
+		68CBEF041771590F0089A3CE /* SoapBubbleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapBubbleAppDelegate.m; sourceTree = "<group>"; };
+		68CBEF061771590F0089A3CE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		68CBEF081771590F0089A3CE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		68CBEF0A1771590F0089A3CE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		68CBEF0D1771590F0089A3CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		68CBEF10177159100089A3CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		68CBEF12177159100089A3CE /* SoapBubbleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapBubbleViewController.h; sourceTree = "<group>"; };
+		68CBEF13177159100089A3CE /* SoapBubbleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapBubbleViewController.m; sourceTree = "<group>"; };
+		68CBEF1A177159100089A3CE /* SoapBubbleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoapBubbleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CBEF1B177159100089A3CE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		68CBEF23177159100089A3CE /* SoapBubbleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SoapBubbleTests-Info.plist"; sourceTree = "<group>"; };
+		68CBEF25177159100089A3CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		68CBEF27177159100089A3CE /* SoapBubbleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapBubbleTests.h; sourceTree = "<group>"; };
+		68CBEF28177159100089A3CE /* SoapBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapBubbleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68CBEEEE1771590F0089A3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEEF51771590F0089A3CE /* UIKit.framework in Frameworks */,
+				68CBEEF71771590F0089A3CE /* Foundation.framework in Frameworks */,
+				68CBEEF91771590F0089A3CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CBEF16177159100089A3CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEF1C177159100089A3CE /* SenTestingKit.framework in Frameworks */,
+				68CBEF1D177159100089A3CE /* UIKit.framework in Frameworks */,
+				68CBEF1E177159100089A3CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68CBEEE81771590F0089A3CE = {
+			isa = PBXGroup;
+			children = (
+				68CBEEFA1771590F0089A3CE /* SoapBubble */,
+				68CBEF21177159100089A3CE /* SoapBubbleTests */,
+				68CBEEF31771590F0089A3CE /* Frameworks */,
+				68CBEEF21771590F0089A3CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68CBEEF21771590F0089A3CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEEF11771590F0089A3CE /* SoapBubble.app */,
+				68CBEF1A177159100089A3CE /* SoapBubbleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68CBEEF31771590F0089A3CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEEF41771590F0089A3CE /* UIKit.framework */,
+				68CBEEF61771590F0089A3CE /* Foundation.framework */,
+				68CBEEF81771590F0089A3CE /* CoreGraphics.framework */,
+				68CBEF1B177159100089A3CE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68CBEEFA1771590F0089A3CE /* SoapBubble */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEF031771590F0089A3CE /* SoapBubbleAppDelegate.h */,
+				68CBEF041771590F0089A3CE /* SoapBubbleAppDelegate.m */,
+				68CBEF0C1771590F0089A3CE /* MainStoryboard_iPhone.storyboard */,
+				68CBEF0F1771590F0089A3CE /* MainStoryboard_iPad.storyboard */,
+				68CBEF12177159100089A3CE /* SoapBubbleViewController.h */,
+				68CBEF13177159100089A3CE /* SoapBubbleViewController.m */,
+				68CBEEFB1771590F0089A3CE /* Supporting Files */,
+			);
+			path = SoapBubble;
+			sourceTree = "<group>";
+		};
+		68CBEEFB1771590F0089A3CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEEFC1771590F0089A3CE /* SoapBubble-Info.plist */,
+				68CBEEFD1771590F0089A3CE /* InfoPlist.strings */,
+				68CBEF001771590F0089A3CE /* main.m */,
+				68CBEF021771590F0089A3CE /* SoapBubble-Prefix.pch */,
+				68CBEF061771590F0089A3CE /* Default.png */,
+				68CBEF081771590F0089A3CE /* Default@2x.png */,
+				68CBEF0A1771590F0089A3CE /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68CBEF21177159100089A3CE /* SoapBubbleTests */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEF27177159100089A3CE /* SoapBubbleTests.h */,
+				68CBEF28177159100089A3CE /* SoapBubbleTests.m */,
+				68CBEF22177159100089A3CE /* Supporting Files */,
+			);
+			path = SoapBubbleTests;
+			sourceTree = "<group>";
+		};
+		68CBEF22177159100089A3CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				68CBEF23177159100089A3CE /* SoapBubbleTests-Info.plist */,
+				68CBEF24177159100089A3CE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68CBEEF01771590F0089A3CE /* SoapBubble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CBEF2C177159100089A3CE /* Build configuration list for PBXNativeTarget "SoapBubble" */;
+			buildPhases = (
+				68CBEEED1771590F0089A3CE /* Sources */,
+				68CBEEEE1771590F0089A3CE /* Frameworks */,
+				68CBEEEF1771590F0089A3CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoapBubble;
+			productName = SoapBubble;
+			productReference = 68CBEEF11771590F0089A3CE /* SoapBubble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68CBEF19177159100089A3CE /* SoapBubbleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CBEF2F177159100089A3CE /* Build configuration list for PBXNativeTarget "SoapBubbleTests" */;
+			buildPhases = (
+				68CBEF15177159100089A3CE /* Sources */,
+				68CBEF16177159100089A3CE /* Frameworks */,
+				68CBEF17177159100089A3CE /* Resources */,
+				68CBEF18177159100089A3CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68CBEF20177159100089A3CE /* PBXTargetDependency */,
+			);
+			name = SoapBubbleTests;
+			productName = SoapBubbleTests;
+			productReference = 68CBEF1A177159100089A3CE /* SoapBubbleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68CBEEE91771590F0089A3CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SoapBubble;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "kevin utecht";
+			};
+			buildConfigurationList = 68CBEEEC1771590F0089A3CE /* Build configuration list for PBXProject "SoapBubble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 68CBEEE81771590F0089A3CE;
+			productRefGroup = 68CBEEF21771590F0089A3CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68CBEEF01771590F0089A3CE /* SoapBubble */,
+				68CBEF19177159100089A3CE /* SoapBubbleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68CBEEEF1771590F0089A3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEEFF1771590F0089A3CE /* InfoPlist.strings in Resources */,
+				68CBEF071771590F0089A3CE /* Default.png in Resources */,
+				68CBEF091771590F0089A3CE /* Default@2x.png in Resources */,
+				68CBEF0B1771590F0089A3CE /* Default-568h@2x.png in Resources */,
+				68CBEF0E1771590F0089A3CE /* MainStoryboard_iPhone.storyboard in Resources */,
+				68CBEF11177159100089A3CE /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CBEF17177159100089A3CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEF26177159100089A3CE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68CBEF18177159100089A3CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68CBEEED1771590F0089A3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEF011771590F0089A3CE /* main.m in Sources */,
+				68CBEF051771590F0089A3CE /* SoapBubbleAppDelegate.m in Sources */,
+				68CBEF14177159100089A3CE /* SoapBubbleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CBEF15177159100089A3CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CBEF29177159100089A3CE /* SoapBubbleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68CBEF20177159100089A3CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68CBEEF01771590F0089A3CE /* SoapBubble */;
+			targetProxy = 68CBEF1F177159100089A3CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		68CBEEFD1771590F0089A3CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CBEEFE1771590F0089A3CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		68CBEF0C1771590F0089A3CE /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CBEF0D1771590F0089A3CE /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		68CBEF0F1771590F0089A3CE /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CBEF10177159100089A3CE /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		68CBEF24177159100089A3CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				68CBEF25177159100089A3CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		68CBEF2A177159100089A3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68CBEF2B177159100089A3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68CBEF2D177159100089A3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoapBubble/SoapBubble-Prefix.pch";
+				INFOPLIST_FILE = "SoapBubble/SoapBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		68CBEF2E177159100089A3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoapBubble/SoapBubble-Prefix.pch";
+				INFOPLIST_FILE = "SoapBubble/SoapBubble-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		68CBEF30177159100089A3CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoapBubble.app/SoapBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoapBubble/SoapBubble-Prefix.pch";
+				INFOPLIST_FILE = "SoapBubbleTests/SoapBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		68CBEF31177159100089A3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SoapBubble.app/SoapBubble";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SoapBubble/SoapBubble-Prefix.pch";
+				INFOPLIST_FILE = "SoapBubbleTests/SoapBubbleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CBEEEC1771590F0089A3CE /* Build configuration list for PBXProject "SoapBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CBEF2A177159100089A3CE /* Debug */,
+				68CBEF2B177159100089A3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68CBEF2C177159100089A3CE /* Build configuration list for PBXNativeTarget "SoapBubble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CBEF2D177159100089A3CE /* Debug */,
+				68CBEF2E177159100089A3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		68CBEF2F177159100089A3CE /* Build configuration list for PBXNativeTarget "SoapBubbleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68CBEF30177159100089A3CE /* Debug */,
+				68CBEF31177159100089A3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68CBEEE91771590F0089A3CE /* Project object */;
+}
