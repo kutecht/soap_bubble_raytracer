@@ -1,23 +1,109 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZVV-Md-DO3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Soap Bubble View Controller - Soap Bubble-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="SoapBubbleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bubble wall thickness coefficient:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8o-XF-Z7X">
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3000" minValue="0.0" maxValue="8000" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-Nb-DeQ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="HsB-we-tHB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="2" eventType="valueChanged" id="4ic-hk-Eh9"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHb-K0-luo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="768" id="YHh-ML-8Df"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6A7-bc-pTS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="C2d-3C-qGK"/>
+                                    <constraint firstAttribute="width" constant="185" id="Cat-Vd-T0S"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xcr-Nb-DeQ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="91" id="5Vr-F4-P3h"/>
+                            <constraint firstItem="cHb-K0-luo" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="Gjk-d2-b4m"/>
+                            <constraint firstItem="cHb-K0-luo" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="IuA-C1-fzh"/>
+                            <constraint firstItem="xcr-Nb-DeQ" firstAttribute="leading" secondItem="Z8o-XF-Z7X" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="LRr-gu-M92"/>
+                            <constraint firstItem="Z8o-XF-Z7X" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="99" id="Ne7-Uh-vlK"/>
+                            <constraint firstItem="6A7-bc-pTS" firstAttribute="top" secondItem="5" secondAttribute="top" constant="6" id="Pwa-n1-0TA"/>
+                            <constraint firstItem="xcr-Nb-DeQ" firstAttribute="bottom" secondItem="Z8o-XF-Z7X" secondAttribute="bottom" type="default" id="WER-NW-3B2"/>
+                            <constraint firstItem="cHb-K0-luo" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="fVl-pj-uEn"/>
+                            <constraint firstItem="xcr-Nb-DeQ" firstAttribute="centerY" secondItem="Z8o-XF-Z7X" secondAttribute="centerY" type="default" id="qb6-sE-IQU"/>
+                            <constraint firstAttribute="trailing" secondItem="6A7-bc-pTS" secondAttribute="trailing" constant="99" id="rOS-Ml-GPD"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Soap Bubble" id="grU-IH-vb0">
+                        <barButtonItem key="rightBarButtonItem" title="Render" id="2hv-BK-bC1">
+                            <connections>
+                                <action selector="render:" destination="2" id="igT-vp-24R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainImageView" destination="cHb-K0-luo" id="6U9-60-teb"/>
+                        <outlet property="previewImageView" destination="6A7-bc-pTS" id="EcY-Gy-TVB"/>
+                        <outlet property="renderButton" destination="2hv-BK-bC1" id="dn5-KO-WD1"/>
+                        <outlet property="thicknessSlider" destination="xcr-Nb-DeQ" id="OvI-XT-NnP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="960" y="-171"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ob-VF-hem">
+            <objects>
+                <navigationController id="ZVV-Md-DO3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="awE-zG-68L">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Exw-3U-Xg7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jen-ka-mPw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-385"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SoapBubbleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoapBubbleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="render:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="sliderValueChanged:"/>
+                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="previewImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="renderButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="thicknessSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
