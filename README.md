@@ -1,4 +1,4 @@
-soap_bubble_raytracer
+Soap Bubble Raytracer
 =====================
 
 An iOS iPad app that ray traces a soap bubble.
