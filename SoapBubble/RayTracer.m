@@ -36,7 +36,6 @@ typedef struct
     color_s diffuse;
     color_s specular;
     double specularWidthFactor;
-    double indexOfRefraction;
     double reflectionDiffusion;
     vector_s timeMotionCoefficient;
     double thicknessCoefficient;
@@ -455,9 +454,7 @@ color_s fresnel_formula(intersect_s i, ray_s r, vector_s pointOfIntersection)
     double sum_x = 0, sum_y = 0, sum_z = 0, sum_Cy = 0;
     double sum_x_R = 0, sum_y_R = 0, sum_z_R = 0;
     
-    thickness =  i.bubble->thicknessCoefficient * ((pointOfIntersection.y - i.bubble->yMin) /
-                                                   (i.bubble->yMax - i.bubble->yMin)) - 500;
-    
+    thickness =  i.bubble->thicknessCoefficient * ((pointOfIntersection.y - i.bubble->yMin) / (i.bubble->yMax - i.bubble->yMin));
     incident = vsub(r.origin, pointOfIntersection);
     n_dot_i = vdot(i.normalAtPoint, incident);
     angle1 = acos(n_dot_i/(sqrt(sqr(incident.x)+sqr(incident.y)+
@@ -500,10 +497,10 @@ color_s shade(intersect_s i, ray_s r, bubble_s *bubble, double currentTime, int 
     color_s c;
     
     light_s light;
-    light.orgin.x = -7.157895088;
-    light.orgin.y = 4;
-	light.orgin.z = -10;
-    light.angle = 2.0 * M_PI/180;
+    light.orgin.x = -5.0;
+    light.orgin.y = 8.0;
+	light.orgin.z = 3.0;
+    light.angle = 0.1 * M_PI/180;
 
     // if the recursion level has been exceeded, return peacefully
     if (n > MAX_RECURSION_LEVEL)
@@ -618,7 +615,7 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
     color_s col, color;
     ray_s ray, r2;
 
-    double fieldOfView = tan(40.0 * M_PI / 180) / sqrt(2.0);
+    double fieldOfView = tan(37.0 * M_PI / 180) / sqrt(2.0);
     double pixelWidthInRadians = fieldOfView / xRes;
         
     vector_s up;
@@ -629,17 +626,17 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
     vector_s eye;
     eye.x = 0.0;
     eye.y = 0.0;
-    eye.z = 1.0;
+    eye.z = 0.4;
     
     vector_s eyeDirection;
-    eyeDirection.x = -0.210000000;
-    eyeDirection.y = 0.736842000;
-    eyeDirection.z = 0.526315689;
+    eyeDirection.x = 0.0;
+    eyeDirection.y = 0.2;
+    eyeDirection.z = 1.0;
     
     bubble_s bubble;
-    bubble.center.x = -2.10;
-    bubble.center.y = 7.47;
-    bubble.center.z = 6.31;
+    bubble.center.x = 0.0;
+    bubble.center.y = 1.8;
+    bubble.center.z = 10.0;
     bubble.radius = 17.89;
     bubble.yMin = 0;
     bubble.yMax = 0;
@@ -649,22 +646,22 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
     bubble.diffuse.r = 0.0;
     bubble.diffuse.g = 0.0;
     bubble.diffuse.b = 0.0;
-    bubble.specular.r = 0.1;
-    bubble.specular.g = 0.1;
-    bubble.specular.b = 0.1;
+    bubble.specular.r = 1.0;
+    bubble.specular.g = 1.0;
+    bubble.specular.b = 1.0;
     bubble.interferencePercentage = 1.0;
     bubble.reflectionPercentage = 0.0;
     bubble.reflection.r = 0.0;
     bubble.reflection.g = 0.0;
     bubble.reflection.b = 0.0;
-    bubble.specularWidthFactor = 5.263157844;
-    bubble.indexOfRefraction = 1.35;
-    bubble.reflectionDiffusion = 1.0;
+    bubble.specularWidthFactor = 60.0;
+    bubble.reflectionDiffusion = 0.5;
     bubble.reflectionDiffusion *= M_PI / 180;
     bubble.timeMotionCoefficient.x = 0.0;
     bubble.timeMotionCoefficient.y = 0.0;
     bubble.timeMotionCoefficient.z = 0.0;
     bubble.thicknessCoefficient = bubbleThicknessCoefficient;
+    NSLog(@"Coeff:%g", bubbleThicknessCoefficient);
 
     vector_s hor = normalize(vcross(up, eyeDirection)); // the x screen vector
     vector_s ver = normalize(vcross(eyeDirection, hor) ); // the y screen vector
