@@ -713,9 +713,6 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
                 col.b += color.b / TRIES_PER_PIXEL;
             }
             
-            //CGContextSetFillColorWithColor(context, [[UIColor colorWithRed:col.r green:col.g blue:col.b alpha:1.0] CGColor]);
-            //CGRect pixelRect = CGRectMake(x, y, x+1, y);
-            //CGContextFillRect(context, pixelRect);
             CGContextMoveToPoint(context, x, y);
             CGContextAddLineToPoint(context, x+1, y);
             CGContextSetStrokeColorWithColor(context, [[UIColor colorWithRed:col.r green:col.g blue:col.b alpha:1.0] CGColor]);
