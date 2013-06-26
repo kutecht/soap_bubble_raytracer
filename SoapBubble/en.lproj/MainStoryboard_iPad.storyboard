@@ -17,7 +17,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="642.24000000000001" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-Nb-DeQ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="603.44799999999998" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-Nb-DeQ">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="135" id="HsB-we-tHB"/>
                                 </constraints>
@@ -88,6 +88,22 @@
             <point key="canvasLocation" x="793" y="-385"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SoapBubbleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoapBubbleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="render:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="sliderValueChanged:"/>
+                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="previewImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="renderButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="thicknessSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -466,10 +466,10 @@ color_s fresnel_formula(intersect_s i, ray_s r, vector_s pointOfIntersection)
         sum_x = sum_x + x_bar[j];
         sum_y = sum_y + y_bar[j];
         sum_z = sum_z + z_bar[j];
+        sum_Cy = sum_Cy + (y_bar[j] * C[j]);        
         sum_x_R = sum_x_R + (x_bar[j] * C[j] * R_approx);
         sum_y_R = sum_y_R + (y_bar[j] * C[j] * R_approx);
         sum_z_R = sum_z_R + (z_bar[j] * C[j] * R_approx);
-        sum_Cy = sum_Cy + (y_bar[j] * C[j]);
     }
     tri_X = 4 * R_12 * R_23 * (sum_x + sum_x_R);
     tri_Y = 4 * R_12 * R_23 * (sum_y + sum_y_R);
@@ -661,7 +661,6 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
     bubble.timeMotionCoefficient.y = 0.0;
     bubble.timeMotionCoefficient.z = 0.0;
     bubble.thicknessCoefficient = bubbleThicknessCoefficient;
-    NSLog(@"Coeff:%g", bubbleThicknessCoefficient);
 
     vector_s hor = normalize(vcross(up, eyeDirection)); // the x screen vector
     vector_s ver = normalize(vcross(eyeDirection, hor) ); // the y screen vector
@@ -713,9 +712,16 @@ UIImage* raytrace(int xRes, int yRes, double bubbleThicknessCoefficient)
                 col.g += color.g / TRIES_PER_PIXEL;
                 col.b += color.b / TRIES_PER_PIXEL;
             }
-            CGContextSetFillColorWithColor(context, [[UIColor colorWithRed:col.r green:col.g blue:col.b alpha:1.0] CGColor]);
-            CGRect pixelRect = CGRectMake(x, y, x+1, y);
-            CGContextFillRect(context, pixelRect);
+            
+            //CGContextSetFillColorWithColor(context, [[UIColor colorWithRed:col.r green:col.g blue:col.b alpha:1.0] CGColor]);
+            //CGRect pixelRect = CGRectMake(x, y, x+1, y);
+            //CGContextFillRect(context, pixelRect);
+            CGContextMoveToPoint(context, x, y);
+            CGContextAddLineToPoint(context, x+1, y);
+            CGContextSetStrokeColorWithColor(context, [[UIColor colorWithRed:col.r green:col.g blue:col.b alpha:1.0] CGColor]);
+            CGContextStrokePath(context);
+
+
             xr += xStep;
         }
         yr -= yStep;
