@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Soap Bubble View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="SoapBubbleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7QS-If-pBE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="UIz-za-ddc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thickness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-wY-Nfv">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="603.44799999999998" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="0hZ-Is-dNS">
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="2" eventType="valueChanged" id="RXy-qr-Bqn"/>
+                                </connections>
+                            </slider>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0hZ-Is-dNS" firstAttribute="top" secondItem="wzU-wY-Nfv" secondAttribute="top" type="default" id="4g4-8j-f3g"/>
+                            <constraint firstItem="wzU-wY-Nfv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="43" id="aKj-ft-lcg"/>
+                            <constraint firstAttribute="trailing" secondItem="0hZ-Is-dNS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="f89-ll-Jsx"/>
+                            <constraint firstItem="wzU-wY-Nfv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="k7P-CF-1uV"/>
+                            <constraint firstItem="7QS-If-pBE" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="lrY-rx-Ys6"/>
+                            <constraint firstItem="0hZ-Is-dNS" firstAttribute="leading" secondItem="wzU-wY-Nfv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="oay-mM-31b"/>
+                            <constraint firstItem="7QS-If-pBE" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="qWT-w8-qXs"/>
+                            <constraint firstItem="7QS-If-pBE" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="umY-5H-bQA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewImageView" destination="7QS-If-pBE" id="xuK-MX-WGd"/>
+                        <outlet property="thicknessSlider" destination="0hZ-Is-dNS" id="bsX-p0-cas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SoapBubbleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoapBubbleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="render:" candidateClass="UIBarButtonItem"/>
+                <relationship kind="action" name="sliderValueChanged:"/>
+                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="previewImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="renderButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="thicknessSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

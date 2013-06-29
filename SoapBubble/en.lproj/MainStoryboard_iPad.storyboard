@@ -88,22 +88,6 @@
             <point key="canvasLocation" x="793" y="-385"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SoapBubbleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoapBubbleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="render:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="sliderValueChanged:"/>
-                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="previewImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="renderButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="thicknessSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
