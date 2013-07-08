@@ -14,7 +14,7 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bubble wall thickness coefficient:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8o-XF-Z7X">
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="603.44799999999998" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-Nb-DeQ">
@@ -37,7 +37,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xcr-Nb-DeQ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="91" id="5Vr-F4-P3h"/>
                             <constraint firstItem="cHb-K0-luo" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="Gjk-d2-b4m"/>

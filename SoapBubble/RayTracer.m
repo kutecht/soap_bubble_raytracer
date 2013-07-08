@@ -391,17 +391,11 @@ color_s trace_a_ray(ray_s r, bubble_s *bubble, double currentTime, int n)
     // if no intersection, return some background color
     if (inter.bubble == NULL)
     {
-        // no intersection, returning a background color
+        // no intersection, returning a black background color
         color_s c;
-        c.b = .9;
-        if (r.direction.x > 0.0)
-        {
-            c.r = c.g = 0.4;
-        }
-        else
-        {
-            c.r = c.g = 0.4 - 0.9 * r.direction.x;
-        }
+        c.r = 0.0;
+        c.g = 0.0;
+        c.b = 0.0;
         return c;
     }
     

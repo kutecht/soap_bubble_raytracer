@@ -19,7 +19,7 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thickness:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-wY-Nfv">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="603.44799999999998" minValue="200" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="0hZ-Is-dNS">
@@ -28,10 +28,10 @@
                                 </connections>
                             </slider>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0hZ-Is-dNS" firstAttribute="top" secondItem="wzU-wY-Nfv" secondAttribute="top" type="default" id="4g4-8j-f3g"/>
-                            <constraint firstItem="wzU-wY-Nfv" firstAttribute="top" secondItem="3" secondAttribute="top" constant="43" id="aKj-ft-lcg"/>
+                            <constraint firstItem="0hZ-Is-dNS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="42" id="Faq-Xp-oAt"/>
+                            <constraint firstItem="0hZ-Is-dNS" firstAttribute="bottom" secondItem="wzU-wY-Nfv" secondAttribute="bottom" type="default" id="FsM-4o-umJ"/>
                             <constraint firstAttribute="trailing" secondItem="0hZ-Is-dNS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="f89-ll-Jsx"/>
                             <constraint firstItem="wzU-wY-Nfv" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="k7P-CF-1uV"/>
                             <constraint firstItem="7QS-If-pBE" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="lrY-rx-Ys6"/>
@@ -49,22 +49,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="SoapBubbleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SoapBubbleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="render:" candidateClass="UIBarButtonItem"/>
-                <relationship kind="action" name="sliderValueChanged:"/>
-                <relationship kind="outlet" name="mainImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="previewImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="renderButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="thicknessSlider" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

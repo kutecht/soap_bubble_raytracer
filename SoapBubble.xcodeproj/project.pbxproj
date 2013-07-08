@@ -25,6 +25,8 @@
 		68CBEF1E177159100089A3CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CBEEF61771590F0089A3CE /* Foundation.framework */; };
 		68CBEF26177159100089A3CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 68CBEF24177159100089A3CE /* InfoPlist.strings */; };
 		68CBEF29177159100089A3CE /* SoapBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF28177159100089A3CE /* SoapBubbleTests.m */; };
+		68FA8912178B1BBA006B0757 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8911178B1BBA006B0757 /* Icon@2x.png */; };
+		68FA8914178B1CF2006B0757 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8913178B1CF2006B0757 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		68CBEF25177159100089A3CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		68CBEF27177159100089A3CE /* SoapBubbleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapBubbleTests.h; sourceTree = "<group>"; };
 		68CBEF28177159100089A3CE /* SoapBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapBubbleTests.m; sourceTree = "<group>"; };
+		68FA8911178B1BBA006B0757 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		68FA8913178B1CF2006B0757 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				68CBEF13177159100089A3CE /* SoapBubbleViewController.m */,
 				6869CDFA1774BC1400ACE02C /* RayTracer.h */,
 				6869CDFB1774BC1400ACE02C /* RayTracer.m */,
+				68FA890F178B1AD7006B0757 /* Icon */,
 				68CBEEFB1771590F0089A3CE /* Supporting Files */,
 			);
 			path = SoapBubble;
@@ -166,6 +171,15 @@
 				68CBEF24177159100089A3CE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68FA890F178B1AD7006B0757 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				68FA8913178B1CF2006B0757 /* Icon.png */,
+				68FA8911178B1BBA006B0757 /* Icon@2x.png */,
+			);
+			name = Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +260,8 @@
 				68CBEF0B1771590F0089A3CE /* Default-568h@2x.png in Resources */,
 				68CBEF0E1771590F0089A3CE /* MainStoryboard_iPhone.storyboard in Resources */,
 				68CBEF11177159100089A3CE /* MainStoryboard_iPad.storyboard in Resources */,
+				68FA8912178B1BBA006B0757 /* Icon@2x.png in Resources */,
+				68FA8914178B1CF2006B0757 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
