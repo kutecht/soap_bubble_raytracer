@@ -27,6 +27,8 @@
 		68CBEF29177159100089A3CE /* SoapBubbleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68CBEF28177159100089A3CE /* SoapBubbleTests.m */; };
 		68FA8912178B1BBA006B0757 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8911178B1BBA006B0757 /* Icon@2x.png */; };
 		68FA8914178B1CF2006B0757 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8913178B1CF2006B0757 /* Icon.png */; };
+		68FA8916178B2177006B0757 /* IconIpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8915178B2177006B0757 /* IconIpad.png */; };
+		68FA8918178B2187006B0757 /* IconIpad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FA8917178B2187006B0757 /* IconIpad@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		68CBEF28177159100089A3CE /* SoapBubbleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapBubbleTests.m; sourceTree = "<group>"; };
 		68FA8911178B1BBA006B0757 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		68FA8913178B1CF2006B0757 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		68FA8915178B2177006B0757 /* IconIpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconIpad.png; sourceTree = "<group>"; };
+		68FA8917178B2187006B0757 /* IconIpad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconIpad@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		68FA890F178B1AD7006B0757 /* Icon */ = {
 			isa = PBXGroup;
 			children = (
+				68FA8917178B2187006B0757 /* IconIpad@2x.png */,
+				68FA8915178B2177006B0757 /* IconIpad.png */,
 				68FA8913178B1CF2006B0757 /* Icon.png */,
 				68FA8911178B1BBA006B0757 /* Icon@2x.png */,
 			);
@@ -262,6 +268,8 @@
 				68CBEF11177159100089A3CE /* MainStoryboard_iPad.storyboard in Resources */,
 				68FA8912178B1BBA006B0757 /* Icon@2x.png in Resources */,
 				68FA8914178B1CF2006B0757 /* Icon.png in Resources */,
+				68FA8916178B2177006B0757 /* IconIpad.png in Resources */,
+				68FA8918178B2187006B0757 /* IconIpad@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
